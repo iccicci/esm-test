@@ -1,0 +1,15 @@
+{
+  "name": "esm-test",
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@cardano-sdk/util": "^0.15.1",
+    "tsx": "^4.12.0",
+    "typescript": "^4.7.4"
+ },
+ "scripts":{
+   "build": "tsc",
+   "dev": "tsx watch --clear-screen=false index.ts",
+   "prod": "yarn build ; node --import tsx/esm index.js"
+ }
+}
